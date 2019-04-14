@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization-Weather Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="latitude_MaxTemps.html">Latitude vs. Max Temperature</a></li>
+              <li><a href="latitude_humidity.html">Latitude vs. Humidity</a></li>
+              <li><a href="latitude_Cloudiness.html">Latitude vs. Cloudiness</a></li>
+              <li><a href="latitude_windspeed.html">Latitude vs. Wind Speed</a></li>
+            
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+         
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <h1>Data</h1> <br>
+
+    <p>The following table includes all of the data used for plotting during this project.</p><br>
+
+    <!-- First Row -->
+    <div class="row">
+
+      <div class="col-md-12 pad top">
+
+          <div class="pull-center">
+            <table class="table table-bordered table-hover table-responsive">
+            <thead><tr><th title="Field #1">Index</th>
+            <th title="Field #2">City</th>
+            <th title="Field #3">Country</th>
+            <th title="Field #4">Cloudiness</th>
+            <th title="Field #5">Date</th>
+            <th title="Field #6">Humidity</th>
+            <th title="Field #7">Lat</th>
+            <th title="Field #8">Lng</th>
+            <th title="Field #9">Max Temp</th>
+            <th title="Field #10">Wind Speed</th>
+            </tr></thead>
+            <tbody><tr>
+            <td align="right">0</td>
+            <td>andenes</td>
+            <td>NO</td>
+            <td align="right">0</td>
+            <td>12/10/2017</td>
+            <td align="right">69</td>
+            <td align="right">69.31</td>
+            <td align="right">16.12</td>
+            <td align="right">37.4</td>
+            <td align="right">14.99</td>
+            </tr>
+            <tr>
+            <td align="right">1</td>
+            <td>mount isa</td>
+            <td>AU</td>
+            <td align="right">0</td>
+            <td>12/10/2017</td>
+            <td align="right">15</td>
+            <td align="right">-20.73</td>
+            <td align="right">139.5</td>
+            <td align="right">89.6</td>
+            <td align="right">9.17</td>
+            </tr>
+            <tr>
+            <td align="right">2</td>
+            <td>coquimbo</td>
+            <td>CL</td>
+            <td align="right">20</td>
+            <td>12/10/2017</td>
+            <td align="right">68</td>
+            <td align="right">-29.95</td>
+            <td align="right">-71.34</td>
+            <td align="right">64.4</td>
+            <td align="right">9.17</td>
+            </tr>
+            <tr>
+            <td align="right">3</td>
+            <td>tawang</td>
+            <td>IN</td>
+            <td align="right">0</td>
+            <td>12/10/2017</td>
+            <td align="right">51</td>
+            <td align="right">27.58</td>
+            <td align="right">91.87</td>
+            <td align="right">33.67</td>
+            <td align="right">1.14</td>
+            </tr>
+            <tr>
+            <td align="right">4</td>
+            <td>ahipara</td>
+            <td>NZ</td>
+            <td align="right">44</td>
+            <td>12/10/2017</td>
+            <td align="right">76</td>
+            <td align="right">-35.17</td>
+            <td align="right">173.17</td>
+            <td align="right">69.98</td>
+            <td align="right">3.49</td>
+            </tr>
+            <tr>
+            <td align="right">5</td>
+            <td>moron</td>
+            <td>CU</td>
+            <td align="right">75</td>
+            <td>12/10/2017</td>
+            <td align="right">68</td>
+            <td align="right">22.11</td>
+            <td align="right">-78.63</td>
+            <td align="right">69.8</td>
+            <td align="right">14.99</td>
+            </tr>
+            <tr>
+            <td align="right">6</td>
+            <td>kuala selangor</td>
+            <td>MY</td>
+            <td align="right">56</td>
+            <td>12/10/2017</td>
+            <td align="right">99</td>
+            <td align="right">3.35</td>
+            <td align="right">101.25</td>
+            <td align="right">72.91</td>
+            <td align="right">4.61</td>
+            </tr>
+            <tr>
+            <td align="right">7</td>
+            <td>saint-philippe</td>
+            <td>RE</td>
+            <td align="right">0</td>
+            <td>12/10/2017</td>
+            <td align="right">64</td>
+            <td align="right">-21.36</td>
+            <td align="right">55.77</td>
+            <td align="right">75.2</td>
+            <td align="right">4.7</td>
+            </tr>
+            <tr>
+            <td align="right">8</td>
+            <td>niquero</td>
+            <td>CU</td>
+            <td align="right">92</td>
+            <td>12/10/2017</td>
+            <td align="right">100</td>
+            <td align="right">20.04</td>
+            <td align="right">-77.58</td>
+            <td align="right">77.18</td>
+            <td align="right">15.46</td>
+            </tr>
+            <tr>
+            
+            </tr>
+            </tbody></table>
+
+          </div>
+
+        </div> <!-- 12 Columns -->
+
+    </div> <!-- Row -->
+
+  </div> <!-- Container -->
+
+  </body>
+
+  
+
+  </html>
